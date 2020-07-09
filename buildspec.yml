@@ -23,13 +23,6 @@ phases:
     commands:
       - echo Entered the post_build phase...
       - echo Build completed on `date`
-
-reports:
-  arn:aws:codebuild:your-region:your-aws-account-id:report-group/report-group-name-1:
-    files:
-      - "**/*"
-    base-directory: 'target/tests/reports'
-    discard-paths: no
 artifacts:
   files:
     - bin/Desktop
