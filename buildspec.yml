@@ -1,0 +1,43 @@
+version: 0.2
+
+env:
+  variables:
+  parameter-store:
+
+phases:
+  install:
+    commands:
+      - echo Entered the install phase...
+      - dotnet tool install ElectronNET.CLI -g
+    finally:
+      - echo This always runs even if the update or install command fails 
+  pre_build:
+    commands:
+      - echo Entered the pre_build phase...
+    finally:
+      - echo This always runs even if the login command fails 
+  build:
+    commands:
+      - echo Entered the build phase...
+      - echo Build started on `date`
+      - electronize build /target linux /PublishReadyToRun false
+    finally:
+      - echo This always runs even if the install command fails
+  post_build:
+    commands:
+      - echo Entered the post_build phase...
+      - echo Build completed on `date`
+
+reports:
+  arn:aws:codebuild:your-region:your-aws-account-id:report-group/report-group-name-1:
+    files:
+      - "**/*"
+    base-directory: 'target/tests/reports'
+    discard-paths: no
+artifacts:
+  files:
+    - bin/Desktop
+  discard-paths: no
+cache:
+  paths:
+    - '/root/.m2/**/*'
