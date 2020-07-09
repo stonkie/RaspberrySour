@@ -23,9 +23,10 @@ phases:
     commands:
       - echo Entered the post_build phase...
       - echo Build completed on `date`
+      - ls -lR
 artifacts:
   files:
-    - bin/Desktop
+    - src/bin/Desktop
   discard-paths: no
 cache:
   paths:
