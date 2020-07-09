@@ -26,7 +26,7 @@ phases:
       - ls
 artifacts:
   files:
-    - src/bin/Desktop/*
+    - bin/Desktop/*
   discard-paths: no
 cache:
   paths:
