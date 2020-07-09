@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaspberrySour", "RaspberrySour\RaspberrySour.csproj", "{B4F37597-27B9-44D1-964C-DB220F7CCD05}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B4F37597-27B9-44D1-964C-DB220F7CCD05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4F37597-27B9-44D1-964C-DB220F7CCD05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4F37597-27B9-44D1-964C-DB220F7CCD05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4F37597-27B9-44D1-964C-DB220F7CCD05}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0217DBB0-14A6-4F6F-BE5E-981AD7B4BE3D}
+	EndGlobalSection
+EndGlobal
