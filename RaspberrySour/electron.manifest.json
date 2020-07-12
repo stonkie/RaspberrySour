@@ -43,7 +43,13 @@
     "provider": "github",
     "owner": "Kevin Coulombe",
     "publishAutoUpdate": true,
-    "releaseType": "draft",
+    "releaseType": "prerelease",
     "url" : "https://github.com/stonkie/RaspberrySour.git"
+  },
+  "github": {
+    "provider" : "github",
+    "repo" : "https://github.com/stonkie/RaspberrySour.git",
+    "releaseType": "prerelease",
+    "private": false
   }
 }
