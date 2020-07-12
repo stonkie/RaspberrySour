@@ -32,11 +32,11 @@
       "**/*"
     ],
     "linux": {
-      "target": ["AppImage"],
-      "appImage": 
-        {
-          "artifactName": "RaspberrySour.AppImage"
-        }
+      "target": ["AppImage"]
+    },
+    "appImage": 
+    {
+      "artifactName": "RaspberrySour.AppImage"
     }
   },
   "publish": {
