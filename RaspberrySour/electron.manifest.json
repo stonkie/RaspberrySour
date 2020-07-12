@@ -32,19 +32,15 @@
       "**/*"
     ],
     "linux": {
-      "target": [
+      "target": ["AppImage"],
+      "appImage": 
         {
-          "target": "AppImage",
-          "appImage": {
-            "artifactName": "RaspberrySour.AppImage"
-          }
-        }
-      ]
+          "artifactName": "RaspberrySour.AppImage"
+        },
     },
   },
-  "publish": ["github"],
-  "repository": {
-    "type" : "git",
+  "publish": {
+    "provider": "github",
     "url" : "https://github.com/stonkie/RaspberrySour.git"
   }
 }
