@@ -11,7 +11,7 @@
     "appId": "com.stonkie.RaspberrySour",
     "productName": "RaspberrySour",
     "copyright": "Copyright © 2020 ${author}",
-    "buildVersion": "0.0.5-alpha.CODEBUILD_BUILD_NUMBER",
+    "buildVersion": "0.0.5-dev+CODEBUILD_BUILD_NUMBER",
     "compression": "maximum",
     "directories": {
       "output": "../../../bin/package"
@@ -30,12 +30,20 @@
         "filter": [ "**/*" ]
       },
       "**/*"
-    ]
+    ],
+    "linux": {
+      "target": [
+        {
+          "target": "AppImage",
+          "appImage": {
+            "artifactName": "RaspberrySour.AppImage"
+          }
+        }
+      ],
+      "publish": ["github"]
+    },
   },
-  "linux": {
-    "target": "AppImage",
-    "publish": ["github"]
-  },
+
   "repository": {
     "type" : "git",
     "url" : "https://github.com/stonkie/RaspberrySour.git"
