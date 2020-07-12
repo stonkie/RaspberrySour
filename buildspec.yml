@@ -10,6 +10,7 @@ phases:
   pre_build:
     commands:
       - echo Entered the pre_build phase...
+      - sed -i "s/CODEBUILD_BUILD_NUMBER/$CODEBUILD_BUILD_NUMBER/g" RaspberrySour/electron.manifest.json
     finally:
       - echo This always runs even if the login command fails 
   build:
