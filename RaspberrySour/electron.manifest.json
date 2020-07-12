@@ -32,7 +32,8 @@
       "**/*"
     ],
     "linux": {
-      "target": ["AppImage"]
+      "target": ["AppImage"],
+      "category": "Science"
     },
     "appImage": 
     {
@@ -41,14 +42,11 @@
   },
   "publish": {
     "provider": "github",
-    "owner": "Kevin Coulombe",
+    "owner": "stonkie",
     "publishAutoUpdate": true,
     "releaseType": "prerelease",
-    "url" : "https://github.com/stonkie/RaspberrySour.git"
-  },
-  "github": {
-    "provider" : "github",
     "repo" : "https://github.com/stonkie/RaspberrySour.git",
+    "url" : "https://github.com/stonkie/RaspberrySour.git",
     "releaseType": "prerelease",
     "private": false
   }
