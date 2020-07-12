@@ -11,7 +11,7 @@
     "appId": "com.stonkie.RaspberrySour",
     "productName": "RaspberrySour",
     "copyright": "Copyright © 2020 ${author}",
-    "buildVersion": "0.0.5-dev+CODEBUILD_BUILD_NUMBER",
+    "buildVersion": "0.0.5-dev_CODEBUILD_BUILD_NUMBER",
     "compression": "maximum",
     "directories": {
       "output": "../../../bin/package"
@@ -41,6 +41,9 @@
   },
   "publish": {
     "provider": "github",
+    "owner": "Kevin Coulombe",
+    "publishAutoUpdate": true,
+    "releaseType": "draft",
     "url" : "https://github.com/stonkie/RaspberrySour.git"
   }
 }

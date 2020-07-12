@@ -16,7 +16,7 @@ phases:
   build:
     commands:
       - echo Entered the build phase...
-      - electronize build /target linux-arm /electron-arch armv7l
+      - electronize build /target linux-arm /electron-arch armv7l /electron-params "-p always"
     finally:
       - echo This always runs even if the install command fails
   post_build:
