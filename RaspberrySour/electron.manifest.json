@@ -39,11 +39,10 @@
             "artifactName": "RaspberrySour.AppImage"
           }
         }
-      ],
-      "publish": ["github"]
+      ]
     },
   },
-
+  "publish": ["github"],
   "repository": {
     "type" : "git",
     "url" : "https://github.com/stonkie/RaspberrySour.git"
