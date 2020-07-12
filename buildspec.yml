@@ -15,19 +15,16 @@ phases:
   build:
     commands:
       - echo Entered the build phase...
-      - echo Build started on `date`
       - electronize build /target linux-arm /electron-arch armv7l
     finally:
       - echo This always runs even if the install command fails
   post_build:
     commands:
       - echo Entered the post_build phase...
-      - echo Build completed on `date`
-      - ls
 artifacts:
   files:
-    - bin/Desktop/*
-  discard-paths: no
+    - bin/package/*
+  discard-paths: yes
 cache:
   paths:
     - '/root/.m2/**/*'

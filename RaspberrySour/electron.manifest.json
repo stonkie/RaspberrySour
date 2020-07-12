@@ -4,17 +4,17 @@
     "imageFile": ""
   },
   "name": "RaspberrySour",
-  "author": "",
-  "singleInstance": false,
+  "author": "Kevin Coulombe",
+  "singleInstance": true,
   "environment": "Production",
   "build": {
-    "appId": "com.RaspberrySour.app",
+    "appId": "com.stonkie.RaspberrySour",
     "productName": "RaspberrySour",
-    "copyright": "Copyright © 2020",
-    "buildVersion": "1.0.0",
+    "copyright": "Copyright © 2020 ${author}",
+    "buildVersion": "v0.0.5.$(Get-Date -UFormat \"%Y%m%d-%H%M%S\")",
     "compression": "maximum",
     "directories": {
-      "output": "../../../bin/Desktop"
+      "output": "../../../bin/package"
     },
     "extraResources": [
       {
@@ -31,5 +31,11 @@
       },
       "**/*"
     ]
+  },
+  "linux": {
+    "target": "AppImage",
+    "publish": {
+      "github"
+    }
   }
 }
