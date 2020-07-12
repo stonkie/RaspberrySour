@@ -16,7 +16,7 @@ phases:
     commands:
       - echo Entered the build phase...
       - echo Build started on `date`
-      - electronize build /target linux /electron-arch armv7l
+      - electronize build /target linux-arm /electron-arch armv7l
     finally:
       - echo This always runs even if the install command fails
   post_build:
