@@ -36,8 +36,8 @@
       "appImage": 
         {
           "artifactName": "RaspberrySour.AppImage"
-        },
-    },
+        }
+    }
   },
   "publish": {
     "provider": "github",
