@@ -34,8 +34,6 @@
   },
   "linux": {
     "target": "AppImage",
-    "publish": {
-      ["github"]
-    }
+    "publish": ["github"]
   }
 }
