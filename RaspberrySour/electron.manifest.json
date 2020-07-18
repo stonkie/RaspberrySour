@@ -39,14 +39,5 @@
     {
       "artifactName": "RaspberrySour.AppImage"
     }
-  },
-  "publish": [{
-    "provider": "github",
-    "owner": "stonkie",
-    "repo" : "RaspberrySour",
-    "publishAutoUpdate": true,
-    "releaseType": "prerelease",
-    "url" : "https://github.com/stonkie/RaspberrySour.git",
-    "private": false
-  }]
+  }
 }

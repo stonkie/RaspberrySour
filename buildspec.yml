@@ -21,6 +21,7 @@ phases:
       - echo This always runs even if the install command fails
   post_build:
     commands:
+      - echo "v0.0.5-dev.38" >> bin/package/version.txt
       - echo Entered the post_build phase...
 artifacts:
   files:
