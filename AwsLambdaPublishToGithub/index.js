@@ -114,8 +114,8 @@ exports.handler = async (event) => {
         }
     }
     
-    // var result = await putJobSuccess("done", event["CodePipeline.job"].id);
-    // console.log(result);
+    var result = await putJobSuccess("done", event["CodePipeline.job"].id);
+    console.log(result);
         
     const response = {
         statusCode: 200,
